@@ -5,7 +5,7 @@ let eleTop = elemWidth;
 
 password.addEventListener("keyup", () => {
   const passwordValue = document.getElementById("pass").value;
-  if (passwordValue.length < 4) {
+  if (passwordValue.length < 6) {
     password.style.outline = "2px solid red";
     btn.style.backgroundColor = "red";
     btn.classList.add("trans");
@@ -24,7 +24,7 @@ password.addEventListener("keyup", () => {
       const passwordValue = document.getElementById("pass").value;
       // console.log("password ln", passwordValue.length);
 
-      if (passwordValue.length < 4) {
+      if (passwordValue.length < 6) {
         btn.style.position = "absolute";
         btn.style.bottom = "-50px";
         console.log("width", elemWidth);
